@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var fruits = ["apple", "grapes", "Orange"];
+        // for(let i=0;i<fruits.length;i++)
+        //{
+        //    fruits[i];
+        // }
+        //another method - for each
+        // for (let fruit of fruits){
+        //    console.log(fruit)
+        //}
+        ////another method using index
+        //for(let index in fruits)
+        // {
+        //     console.log(index)
+        //     console.log(fruits[index]);
+        // }
+        function show() {
+            // content="";
+            //for(let fruit of fruits){
+            //content=content+fruit+"<br>"
+            // }
+            //document.getElementById("mylist").innerHTML=content
+            for (fruit of fruits) {
+                var li = document.createElement("li")
+
+                li.innerText = fruit;
+                var btn = document.createElement("button")
+                btn.innerText="test";
+                li.appendChild(btn);
+                document.getElementById("mylist").appendChild(li)
+            }
+        }
+    </script>
+    <button onclick="show()">show</button>
+    <ul id="mylist">
+
+    </ul>
+</body>
+
+
+</html>

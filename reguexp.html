@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="username">
+    <button onclick="check()">check</button>
+    <script>
+    function check(){
+        var uname=document.getElementById("username").value;
+       // var regex=/\d+/g
+       //var regex=/\d*/g
+        //alert(uname.match(regex));
+        //validation test
+        //var regex=/^[a-z]{3,}\d{2}$/
+        //var regex=/^\+91\s(987)|(789)\d{7}$/
+       // var regex=/^\w+@(gmail.com)|(yahoo.in)$/
+       
+        if(regex.test(uname)){
+            alert("valid username")
+        }else{
+            alert("invalid username")
+        }
+    }
+       // var message="My phonenumber is 9876543210 and office number is (0484-2234567) and fax is (0484-2243567)"
+       var regex1=/javascript/g
+       var input="javascript is interpreted.javascript is object oriented.";
+       alert(input.match(regex1))
+       alert(input.replace(regex1,"python"))
+    
+    </script>
+   
+
+    </div>
+</body>
+</html>

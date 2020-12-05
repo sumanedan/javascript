@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var message = "My phonenumber is 9876543210 and office number is (0484-2234567) and fax is (0484-2243567)";
+        var regex=/\(*\d+(-)*(\d)*\)*/g
+    
+        console.log(message.match(regex));
+        alert(message.match(regex));
+    </script>
+</body>
+
+</html>

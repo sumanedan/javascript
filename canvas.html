@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <canvas id="mycanvas" width="200" height="100"></canvas>
+    <script>
+        (function (a) {
+            console.log(a)
+            console.log("this is a self invoking fn")
+        })("hello")
+        var c = document.getElementById("mycanvas");
+        var ctx = c.getContext("2d");
+        ctx.moveTo(0, 0);
+        ctx.lineTo(200, 100);
+        ctx.stroke();
+
+        function greetings() {
+            console.log("hey all welcome")
+        }
+        var greetings = function () {
+            console.log("function greetings")
+        }
+        console.log(greetings);
+
+        function calculate(f, a, b) {
+            var result = f(a, b)
+            console.log(f)
+            console.log("result", result)
+        }
+        function add(x, y) {
+            return x + y;
+
+        }
+        function sub(x, y) {
+            return x - y;
+
+        }
+        calculate(add, 10, 20)
+        calculate(sub, 50, 30)
+        function first() {
+            console.log("first fn called")
+            return function second() {
+                console.log("second fn called")
+            }
+            return function third() {
+                console.log("third function called")
+            }
+        }
+
+        let f1 = first();
+        let f2 = f1();
+//f2();
+var str="2012-09-02"
+let date=new Date(str)
+console.log(date,typeof date)
+console.log(date.getTime())
+var str1="2012-09-02"
+let date1=new Date()
+console.log(date1.toLocaleDateString)
+console.log(date1.getTime())
+console.log(date1.getUTCDay)
+    </script>
+
+</body>
+
+</html>

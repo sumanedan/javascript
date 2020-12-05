@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        document.getElementById("footer").innerHTML="\u00A9 reserved for expertzlab"
+
+        function search() {
+            let content = document.getElementById("content").value;
+            let word = document.getElementById("search").value;
+            let regex = new RegExp(word, "g");
+            document.getElementById("highlight").innerHTML = content.replace(regex, "<span style='background-color:yellow'>" + word + "</span>");
+
+        }
+    </script>
+    <textarea name="" id="content" cols="30" rows="10">
+
+    </textarea>
+    <input type="text" id="search">
+    <button onclick=search()>search</button>
+    <div id="highlight">
+
+    </div>
+    <div id="footer">
+
+    </div>
+</body>
+
+</html>

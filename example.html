@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var name = new String("Suman");
+        console.log(name);
+        Newname = name.toUpperCase();
+        console.log(Newname);
+        console.log(name.toLowerCase);
+        console.log(name.indexOf("S"));
+        console.log(name.indexOf("m"));
+        console.log(name.substr(2, 2));
+        console.log(name[1]);
+        console.log(name.substring(1, 4));
+        let str = new String(" Hi Hellooo World ");
+        console.log(str.length);
+        console.log(str)
+        console.log(str.trim())
+        console.log(str.startsWith(" Hi"))
+        let s = str.valueOf();
+        console.log(typeof s);
+        let i = new Number(123)
+        let s3 = i.toString();
+        console.log(s3, typeof s3)
+        let i1 = new Number(123);
+        let i2 = new Number(123);
+        console.log(i1 == 12)
+        var names = [10, 20, 30, 40, 50, 60];
+        console.log(names);
+        console.log(names.length);
+        var numarray = [10, 20, 30, 40, 50, 60];
+        var names1 = new Array();
+        console.log(numarray[3]);
+        numarray[6] = 190;
+        console.log(numarray)
+        numarray[1] = 90;
+        console.log(numarray)
+        numarray.push(1000);
+        console.log(numarray)
+        numarray.pop();
+        console.log(numarray)
+        numarray.splice(4, 2);
+        console.log(numarray)
+        numarray.shift()
+        console.log(numarray)
+        numarray.unshift(50);
+        console.log(numarray);
+        console.log(numarray.indexOf(50))
+        console.table(numarray)
+        var str6 = "hi hello how are you"
+        var words = str6.split(" ");
+        console.log(words);
+        var str8 = "hi hello,how are you"
+        var word = str8.split(",");
+
+
+        console.log(word);
+
+    </script>
+    <button onclick="create()">click</button>
+</body>
+
+</html>

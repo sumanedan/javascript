@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function create() {
+            var para = document.createElement("p");
+            para.innerHTML = "this is a dynamically created content"
+            document.getElementById("mypara").appendChild(para);
+            para.setAttribute("id","p1");
+            para.setAttribute("class","demo")
+    
+      
+            var date=new Date();
+            var inp=document.createElement("input");
+            inp.setAttribute("value",date);
+            document.getElementById("mypara").appendChild(inp)
+        }
+        
+    </script>
+    <button onclick="create()">click</button>
+    
+
+    <div id="mypara">
+
+    </div>
+
+</body>
+
+</html>

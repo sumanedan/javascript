@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var obj={name:"Amal",age:20}
+        var date=new Date();
+        var person={
+            name:"Rony",
+            age:22,
+            display:function(message,date){
+                console.log("Name:",this.name)
+                console.log("Age:",this.age)
+                console.log("hey",this.name,message,"Date",date)
+            }
+        }
+        person.display.call(obj,"Good Afternoon",new Date().getDate())
+        person.display.apply(obj,["Good morning",new Date().getDate()])
+        let f=person.display.bind(obj,"good Night",new Date().getDate())
+        f();
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var x = [10, 13, 51, 20, 30, 40, 50, 600];
+        x.forEach((element) => {
+            console.log(element);
+        })
+
+        let newarray = x.map((e) => {
+            return e ** 2
+        })
+        console.log(newarray);
+        let fiteredarray = x.filter((i) => {
+            if (i % 2 != 0) {
+                return i
+            }
+        })
+        console.log(fiteredarray);
+        let result = x.reduce((i, j) => {
+            console.log("i:", i)
+            console.log("j:", j)
+            return i + j;
+
+        })
+        console.log(result)
+
+        let result1 = x.reduceRight((i, j) => {
+            console.log("i:", i)
+            console.log("j:", j)
+            return i - j;
+
+        })
+        console.log(result1)
+    </script>
+</body>
+
+</html>
